@@ -1,0 +1,165 @@
+/* Full-width header */
+.full-width-header {
+    width: 100%;
+}
+
+/* Toolbar styles */
+.rs-toolbar {
+    background-color: #F4F4F4;
+    padding: 0px 0;
+    
+}
+
+/* Welcome message font size */
+.welcome-message {
+    font-size: 16px;
+    color: black;
+}
+
+/* Apply button styles */
+.apply-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Header contact styles */
+.header-contact {
+    display: flex;
+    align-items: center;
+}
+
+/* Space between logo and menu items */
+#logo-sticky {
+    margin-right: 100px; /* Adjust as needed */
+}
+
+/* Space between menu items */
+.nav-menu > li {
+    
+    margin-right: 0px; /* Adjust as needed */
+}
+
+/* Space between menu items and last item */
+.nav-menu > li:last-child {
+    margin-right: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .rs-menu {
+        display: none;
+    }
+    .rs-menu-toggle {
+        display: block;
+    }
+}
+
+/* Ensure menu items have space on smaller screens */
+.rs-menu-toggle {
+    margin-left: 20px; /* Adjust as needed */
+}
+
+/* Main sub-menu styles */
+.menu-item-has-children .sub-menu {
+    display: none; /* Hide sub-menus by default */
+    position: absolute; /* Position relative to the parent */
+    top: 100%; /* Position below the parent item */
+    left: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background: #292828; /* Adjust background color */
+    border: 1px solid #ddd; /* Border for the submenu */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+/* Nested sub-menu styles */
+.menu-item-has-children .sub-menu .sub-menu {
+    top: 0; /* Align to the right of the parent */
+    left: 100%; /* Move to the right of the parent */
+    margin-left: 1px; /* Small space to prevent overlap */
+}
+
+/* Show the sub-menu on hover */
+.menu-item-has-children:hover > .sub-menu {
+    display: block;
+}
+
+/* Submenu item styles */
+.sub-menu li {
+    position: relative;
+}
+
+.sub-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff; /* Adjust text color */
+}
+
+/* Hover effect for submenu items */
+.sub-menu a:hover {
+    background: #007bff; /* Adjust hover background color */
+    color: #fff; /* Adjust hover text color */
+}
+
+/* Adjust submenu item background color */
+.sub-menu {
+    background-color: #292828; /* Adjust background color */
+    border: 1px solid #333; /* Adjust border color */
+}
+
+/* Additional responsive styles */
+@media (max-width: 576px) {
+    .rs-menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-menu > li {
+        margin-right: 0;
+    
+        margin-bottom: 10px; /* Space between menu items in mobile view */
+    }
+
+    .nav-menu > li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* Custom styles for toggle button */
+.rs-menu-toggle {
+    cursor: pointer;
+}
+
+/* Active state for menu toggle button */
+.rs-menu-toggle.active + .rs-menu {
+    display: block;
+    background: #FFFFFF; /* Adjust background color for mobile menu */
+    width: 100%; /* Full width for mobile menu */
+    color: black;
+}
+
+/* Styling for mobile menu items */
+.rs-menu-toggle.active + .rs-menu .nav-menu {
+    flex-direction: column;
+    width: 100%; /* Full width for mobile menu items */
+}
+/* Menu background color */
+.rs-header .menu-area {
+    background-color:#FFFFFF;
+}
+
+/* Menu link color */
+.rs-header .nav-menu > li > a {
+    
+    color: #1111; /* Change this to the desired link color */
+}
+
+/* Menu link hover color */
+.rs-header .nav-menu > li > a:hover {
+    color: #555555; /* Change this to the desired hover color */
+}
